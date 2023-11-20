@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
 use App\Models\Listing;
 use Illuminate\Database\Seeder;
 
@@ -13,10 +14,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+
+        // $user = User::factory()->create([
+        //     'name' => 'John Doe',
+        //     'email' => 'john@g.com'
+        // ]);
+
+        // Listing::factory(6)->create([
+        //     'user_id' => $user->id
+        // ]);
+
         // \App\Models\User::factory(5)->create();
 
         // Listing::create(
         //     [
+        //         'user_id' => 1,
         //         'title' => 'Software Engineer',
         //         'tags' => 'PHP, Laravel, JavaScript',
         //         'company' => 'Tech Solutions Inc.',
@@ -29,6 +41,7 @@ class DatabaseSeeder extends Seeder
 
         // Listing::create(
         //     [
+        //         'user_id' => 1,
         //         'title' => 'Data Scientist',
         //         'tags' => 'Python, Machine Learning, Data Analysis',
         //         'company' => 'Data Insights Co.',
@@ -41,6 +54,7 @@ class DatabaseSeeder extends Seeder
 
         // Listing::create(
         //     [
+        //         'user_id' => 1,
         //         'title' => 'UX/UI Designer',
         //         'tags' => 'Adobe XD, Sketch, Responsive Design',
         //         'company' => 'Creative Solutions Ltd.',
@@ -53,6 +67,7 @@ class DatabaseSeeder extends Seeder
 
         // Listing::create(
         //     [
+        //         'user_id' => 1,
         //         'title' => 'Marketing Specialist',
         //         'tags' => 'Social Media, Content Marketing, SEO',
         //         'company' => 'Global Marketing Agency',
@@ -65,6 +80,7 @@ class DatabaseSeeder extends Seeder
 
         // Listing::create(
         //     [
+        //         'user_id' => 1,
         //         'title' => 'Network Administrator',
         //         'tags' => 'Cisco, CCNA, Firewall Configuration',
         //         'company' => 'Secure Networks Inc.',

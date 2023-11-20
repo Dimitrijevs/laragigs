@@ -12,6 +12,7 @@ class Listing extends Model
     // to allow submit forms
     protected $fillable = [
         'title',
+        'user_id',
         'logo',
         'company',
         'location',
@@ -31,5 +32,10 @@ class Listing extends Model
             ->orWhere('description', 'like', '%'. request('search'). '%')
             ->orWhere('tags', 'like', '%'. request('search'). '%');
         }
+    }
+
+    // relationship to user
+    public function user() {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
